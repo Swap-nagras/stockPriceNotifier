@@ -120,7 +120,7 @@ if(change_airtel>1 or change_airtel<-1):
     contents = get_contents("Bharti Airtel Ltd.", change_airtel)
     send_email(sender, password, receiver, subject, contents)
 
-if(change_quant_liquid_fund>0.01 or change_quant_liquid_fund<-0.01):
+if(change_quant_liquid_fund>0.05 or change_quant_liquid_fund<-0.05):
     sender = os.getenv("SENDER")
     receiver = os.getenv("RECEIVER_2")
     password = os.getenv("PASSWORD")
